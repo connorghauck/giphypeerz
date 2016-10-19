@@ -13,12 +13,21 @@
         </select> -->
 
         <main ng-class="main.class">
-            
             <button type="submit" ng-click="main.getRandom()">Random</button>
 
             <img ng-src="{{main.gifs}}"/>
-
-
         </main>
+            <form id="searchinTime">
+                        <label for="searchBar"></label>
+                        <input type="text" id="searchin" ng-model="main.searchin"/>
+
+
+                        <button type="submit" ng-click="main.getSpecific()">Search</button>
+                        <div ng-repeat="gif in main.gifsArray">
+                            <img ng-src="{{gif.images.original.url}}">
+                        </div>
+
+            </form>
+
     </body>
 </html>

@@ -17,6 +17,7 @@ function MainController($http){  //we have to make an http request, which we wil
         .then(function(response){
             console.log('response', response);
             main.gifs = response.data.data.image_url;
+            
         });
     };
 

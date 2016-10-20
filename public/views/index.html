@@ -19,8 +19,7 @@
         <main ng-class="main.class">
             <button type="submit" ng-click="main.forRandom()">Random</button>
 
-            <img ng-src="{{main.gifs}}"/>
-        </main>
+            <button type="submit" id="randomButton" ng-click="main.getRandom()">Random</button>
             <form id="searchinTime">
                         <label for="searchBar"></label>
                         <input type="text" id="searchin" ng-model="main.searchin"/>
@@ -30,8 +29,13 @@
                         <div ng-repeat="gif in main.gifsArray">
                             <img ng-src="{{gif.images.original.url}}">
                         </div>
-
             </form>
+            <div ng-repeat="gif in main.gifsArray">
+                <img ng-src="{{gif.images.original.url}}">
+
+            </div>
+            <img id="randomGif" ng-src="{{main.gifs}}"/>
+        </main>
 
     </body>
 </html>

@@ -1,0 +1,20 @@
+body {
+  background-color: #c2fcfb;
+}
+#randomButton, #searchButton {
+  width: 100px;
+  height: 75px;
+  border: 2px solid #606060;
+  background-color: #15056d;
+  color: #d3d3d3;
+  font-size: 16px;
+  margin: 50px;
+}
+#searchinTime {
+  display: inline-block;
+}
+#searchin {
+  height: 25px;
+  width: 300px;
+  font-size: 24px;
+}
